@@ -9,26 +9,31 @@
 
 body{
     color: white;
-    background-color: #161614;
+    background-color: #181729;
 }
 
 /*  --------------------- Barre de Navigation ------------------------- */
 .navbar{
-    position: absolute;
     font-family:'bebas neue';
     position: fixed;
     padding: 10px;
-    background-color: #23d1cc90;
+    background-color: #1817298a;
     width: 100vw;
     z-index: 1;
 }
 .navbar ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 a{
     color: white;
     font-family:'bebas neue';
+    transition: 0.4s;
+}
+.navbar a:hover{
+    color: #b99248;
+    opacity: 1;
 }
 
 /*  --------------------- Fin section Barre de Navigation ------------------------- */
@@ -41,7 +46,7 @@ header{
 
 #backgroundimage{
     position: relative;
-    background-color: #161614;
+    background-color: #181729;
 }
 
 #wolf{
@@ -69,7 +74,7 @@ header{
 
 /* -----------------------------------------Présentation texte------------------------------------------*/
 #presentation{
-    color: #2d2d2d;
+    color: #181729;
     clip-path: polygon(0 0, 100% 8%, 100% 76%, 0% 100%);
     background: linear-gradient(to right, rgb(255, 255, 255), #b2b2b2);
     height: 90vh;
@@ -120,6 +125,7 @@ header{
     height: 7vw;
     align-items: center;
 }
+
 #progressbar-photoshop{
     border: solid white;
     width: 30vw;
@@ -353,6 +359,11 @@ header{
     padding: 2vw;
     width: 40vw;
     border-radius: 2vw;
+    transition: 0,4s;
+}
+.box-school:hover{
+    opacity: 1;
+    background: linear-gradient(to top, rgba(41, 41, 41, 0.5), #b99248);
 }
 #school h3{
     font-size: 30px;
