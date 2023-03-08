@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'bebas neue';
+    font-size: 2vw;
+}
+#container{
+    background-image: url(../img/2-moto-monument.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+.btn {
+    padding: 10px;
+    font-family: arial;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 4px solid #ffffff;
+    transition: all 0.4s;
+    animation: opacity 2s ease;
+}
+.btn a p{
+    color: white;
+    transition: all 0.4s;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn a p:hover{
+    color: rgb(56, 56, 56);
+}
+    
+.btn:hover {
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+}
+.bg{
+    background-color: rgba(125, 125, 125, 0.505);
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
