@@ -1,38 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/portfolio.js"></script>
+</head>
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="side-bar">
-            <div id="logo">
-                <img src="./assets/img/logo-loup.svg" alt="logo loup avec L" width="50">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/img/logo-loup-blanc.svg" alt="">
             </div>
-            <div class="retour">
-                <li><a href="./index.html">Revenir à l'Acceuil
-                <img src="./assets/img/incon-fleche.png" alt="icon de fleche" width="50"></a></li>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#automobile">Automobile / Moto</a>
+                        </li>
+                        <li>
+                            <a href="#portray">Portrait</a>
+                        </li>
+                        <li>
+                            <a href="#animals">Animaux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">A propos de moi</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div id="name">
+                <h1>Desilou_p</h1>
             </div>
-            <div class="element-sidebar">
-                <li><a href="#web-design">Web Design UI - UX</a></li>
-                <li><a href="#illustration">Illustrations</a></li>
-                <li><a href="#graphic-design">Graphisme</a></li>
-                <li><a href="#photography">Photographie</a></li>
-            </div>
-        </div>
+        </nav>
+
     </header>
     <main>
-        <section id="web-design">
-            <h2>Projet en photographie</h2>
+        <section id="automobile">
+            <h2>Shooting photo - Automobile - Moto</h2>
         </section>
-        <section id="illustration"></section>
-        <section id="graphic"></section>
-        <section id="photography"></section>
-
+        <section id="portray">
+            <h2>Shooting photo - Portrait</h2>
+        </section>
+        <section id="animals">
+            <h2>Shooting photo - Animaux</h2>
+        </section>
     </main>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        
+
+        <!-- Page Content  -->
+        <div id="content">
+            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+      
     
 </body>
 </html>

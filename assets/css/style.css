@@ -88,6 +88,9 @@ header{
     font-family:'bebas neue' ;
     font-size: 5vw;
 }
+#preztext{
+    width: 70vw;
+}
 
 /*  --------------------- Fin section presentation ------------------------- */
 
@@ -359,11 +362,6 @@ header{
     padding: 2vw;
     width: 40vw;
     border-radius: 2vw;
-    transition: 0,4s;
-}
-.box-school:hover{
-    opacity: 1;
-    background: linear-gradient(to top, rgba(41, 41, 41, 0.5), #b99248);
 }
 #school h3{
     font-size: 30px;

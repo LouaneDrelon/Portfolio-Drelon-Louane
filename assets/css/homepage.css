@@ -4,9 +4,15 @@
     overflow: hidden;
     font-family: 'bebas neue';
     font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+@font-face {
+    font-family: 'Valorax';
+    src: url(../img/Valorax-lg25V.otf);
 }
 #container{
-    background-image: url(../img/2-moto-monument.jpg);
+    background-image: url(../img/background-homepage.jpg);
     background-size: 100% 100%;
     display: flex;
     justify-content: space-around;
@@ -23,7 +29,7 @@
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.363);
     border-radius: 20px;
-    -webkit-border-radius: 20px;
+    -webkit-border-radius: 5px;
     -moz-border-radius: 20px;
     border: 4px solid #ffffff;
     transition: all 0.4s;
@@ -59,4 +65,15 @@
     100%{
         opacity: 100%;
     }
+}
+#logo p{
+    font-family: 'Valorax';
+    color: white;
+    font-size: 3vw;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
