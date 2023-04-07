@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="./assets/js/portfolio.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 </head>
-    <link rel="stylesheet" href="./assets/css/portfolio.css">
-    <title>Portfolio</title>
+<link rel="stylesheet" href="./assets/css/portfolio.css">
+<title>Portfolio</title>
 </head>
-<body>
+<body id="app">
     <header>
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -23,67 +23,122 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#automobile">Automobile / Moto</a>
+                            <a onclick="showAutomobile()" href="#automobile">Automobile / Moto</a>
                         </li>
                         <li>
-                            <a href="#portray">Portrait</a>
+                            <a onclick="showPortray()" href="#portray">Portrait</a>
                         </li>
                         <li>
-                            <a href="#animals">Animaux</a>
+                            <a onclick="showAnimals()" href="#animals">Animaux</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">A propos de moi</a>
+                    <a onclick="showMe()" href="#me">A propos de moi</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>
                 </li>
             </ul>
+            <div id="reseaux">
+                <a href="https://www.instagram.com/desilou_p/"><img src="./assets/img/logo-instagram-blanc.png" width="50" alt=""></a>
+            </div>
             <div id="name">
                 <h1>Desilou_p</h1>
             </div>
         </nav>
-
+        
     </header>
     <main>
-        <section id="automobile">
-            <h2>Shooting photo - Automobile - Moto</h2>
-        </section>
-        <section id="portray">
-            <h2>Shooting photo - Portrait</h2>
-        </section>
-        <section id="animals">
-            <h2>Shooting photo - Animaux</h2>
+        <section id="portfolio">
+            <section id="me">
+                <h1>Louane, 19ans</h1>
+                <h2>Photographe Automobile / Portrait / Animalière</h2>
+                <div class="prez">
+                    <div class="text-prez">
+                        <p>J'exerce la photographie depuis 4ans avec mon fidèle Canon.</p>
+                        <p>Je suis actuellement étudiante en Design Web & Marketing ce qui me permet d'apprendre dans ce domaine également.</p>
+                        <p>Je serai votre photo pour venir embellir vos véhicules, vos animaux et vous-même !</p>
+                        <p>Je shoot en manuel et retouche avec photoshop et lightroom pour vous transmettre des photos uniques et de qualités.</p>
+                    </div>
+                    <div class="photo-prez">
+                        <img src="./assets/img/portfolio/me.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="automobile">
+                <h2>Shooting photo - Automobile - Moto</h2>
+                <div class="box">
+                    <div class="img-auto1">
+                        <img src="./assets/img/portfolio/m4.png" alt="photographie moto">
+                        <img src="./assets/img/portfolio/m6.jpg" alt="photographie moto">
+                        <img src="./assets/img/portfolio/m7.png" alt="photographie moto">
+                    </div>
+                    <div class="img-auto2">
+                        <img src="./assets/img/portfolio/m1.jpg" alt="photographie moto">
+                        <img src="./assets/img/portfolio/m5.jpg" alt="photographie moto">
+                        <img src="./assets/img/portfolio/m8.png" alt="photo">
+                    </div>
+                    <div class="img-auto3">
+                        <img src="./assets/img/portfolio/m2.jpg" alt="photographie moto">
+                        <img src="./assets/img/portfolio/m3.jpg" alt="photographie moto">
+                        
+                    </div> 
+                </div>
+            </section>
+            <section class="portray">
+                <h2>Shooting photo - Portrait</h2>
+                <div class="box">
+                    <div class="img-auto1">
+                        <img src="./assets/img/portfolio/p12.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p15.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p16.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p2.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p3.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p10.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p17 (3).jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/me.jpg" alt="">
+                    </div>
+                    <div class="img-auto2">
+                        <img src="./assets/img/portfolio/p4.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p5.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p6.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p11.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p14.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p17 (1).jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p18.jpg" alt="photographie portrait">
+                    </div>
+                    <div class="img-auto3">
+                        <img src="./assets/img/portfolio/p7.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p8.jpg" alt="">
+                        <img src="./assets/img/portfolio/p9.jpg" alt="">
+                        <img src="./assets/img/portfolio/p13.png" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p1.jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p17 (2).jpg" alt="photographie portrait">
+                        <img src="./assets/img/portfolio/p19.jpg" alt="photographie portrait">
+                    </div> 
+                </div>
+            </section>
+            <section class="animals">
+                <h2>Shooting photo - Animaux</h2>
+                <div class="box">
+                    <div class="img-auto1">
+                        <img src="./assets/img/portfolio/animal1.jpg" alt="photographie animalière">
+                        <img src="./assets/img/portfolio/animal2.jpg" alt="photographie animalière">
+                    </div>
+                    <div class="img-auto2">
+                        <img src="./assets/img/portfolio/animal4.png" alt="photographie animalière">
+                        <img src="./assets/img/portfolio/animal5.png" alt="photographie animalière">
+                    </div>
+                    <div class="img-auto3">
+                        <img src="./assets/img/portfolio/animal6.png" alt="photographie animalière">
+                        <img src="./assets/img/portfolio/animal3.jpg" alt="photographie animalière">
+                    </div> 
+                </div>
+            </section>
         </section>
     </main>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        
-
-        <!-- Page Content  -->
-        <div id="content">
-            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </div>
-      
     
+    <script src="./assets/js/portfolio.js"></script>
 </body>
 </html>

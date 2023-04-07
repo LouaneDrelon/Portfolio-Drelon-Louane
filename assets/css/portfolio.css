@@ -6,7 +6,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #282828;
     margin: 0;
 }
 
@@ -62,7 +62,7 @@ a:focus {
     position: fixed;
     min-width: 250px;
     max-width: 250px;
-    background: #181729;
+    background: #1a1a1a;
     color: #fff;
     transition: all 0.3s;
     height: 100vh;
@@ -75,12 +75,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #181729;
+    background: #1a1a1a;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #0b0b13;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 #sidebar ul p {
@@ -95,14 +95,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #181729;
+    color: #1a1a1a;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #181729;
+    background: #1a1a1a;
 }
 
 a[data-toggle="collapse"] {
@@ -120,7 +120,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #181729;
+    background: #1a1a1a;
 }
 
 ul.CTAs {
@@ -142,7 +142,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #181729 !important;
+    background: #1a1a1a !important;
     color: #fff !important;
 }
 
@@ -175,11 +175,78 @@ a.article:hover {
 #name h1{
     font-family: 'Valorax';
     font-size: 2vw;
-    margin-top: 35vh;
+
 }
 #name{
     display: flex;
     justify-content: center;
 }
 
+main{
+    display: flex;
+    justify-content:flex-end;
+    width: 100vw;
+    flex-direction: column;
+}
 
+/* ----------- montrer/ ne pas montrer les section ---------------*/
+
+main{
+    width: 80vw;
+    float: right;
+}
+.automobile{
+    display: none;
+}
+.automobile_show{
+    display: block;
+}
+.animals{
+    display: none;
+}
+.animals_show{
+    display: block;
+}
+.portray{
+    display: none;
+}
+.portray_show{
+    display: block;
+}
+main img{
+    width: 25vw;
+    border: #282828 solid 4px;
+}
+main h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 5vw;
+}
+.img-auto1 {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.img-auto2{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.img-auto3{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.box{
+    display: flex;
+}
+#me{
+    color: white;
+}
+#reseaux{
+    display: flex;
+    justify-content: center;
+    margin-top: 14vw;
+}
+.prez{
+    display: flex;
+}
