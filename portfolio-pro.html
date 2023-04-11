@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 </head>
 <link rel="stylesheet" href="./assets/css/portfolio.css">
 <title>Portfolio</title>
 </head>
-<body id="app">
+<body id="vanta">
     <header>
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -20,7 +22,7 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio<img id="fleche" src="./assets/img/fleche.png" alt=""></a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a onclick="showAutomobile()" href="#automobile">Automobile / Moto</a>
@@ -52,18 +54,17 @@
     <main>
         <section id="portfolio">
             <section id="me">
-                <h1>Louane, 19ans</h1>
-                <h2>Photographe Automobile / Portrait / Animalière</h2>
                 <div class="prez">
-                    <div class="text-prez">
-                        <p>J'exerce la photographie depuis 4ans avec mon fidèle Canon.</p>
-                        <p>Je suis actuellement étudiante en Design Web & Marketing ce qui me permet d'apprendre dans ce domaine également.</p>
-                        <p>Je serai votre photo pour venir embellir vos véhicules, vos animaux et vous-même !</p>
-                        <p>Je shoot en manuel et retouche avec photoshop et lightroom pour vous transmettre des photos uniques et de qualités.</p>
-                    </div>
-                    <div class="photo-prez">
-                        <img src="./assets/img/portfolio/me.jpg" alt="">
-                    </div>
+                    <h1>Louane, 19 ans</h1>
+                    <h2>Photographe Automobile / Portrait / Animalière</h2>
+                    <br>
+                    <p>J'exerce la photographie depuis 4ans avec mon fidèle Canon.</p>
+                    <p>Je suis actuellement étudiante en Design Web & Marketing ce qui me permet d'apprendre dans ce domaine également.</p>
+                    <p>Je serai votre photo pour venir embellir vos véhicules, vos animaux et vous-même !</p>
+                    <p>Je shoot en manuel et retouche avec photoshop et lightroom pour vous transmettre des photos uniques et de qualitées.</p>
+                </div>
+                <div class="photo-prez">
+                    <img src="./assets/img/portfolio/me.jpg" alt="photo de louane drelon">
                 </div>
             </section>
             <section class="automobile">

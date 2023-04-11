@@ -6,7 +6,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #282828;
+    background: #131A43;
     margin: 0;
 }
 
@@ -15,7 +15,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #ffffff;
 }
 
 a,
@@ -62,7 +62,7 @@ a:focus {
     position: fixed;
     min-width: 250px;
     max-width: 250px;
-    background: #1a1a1a;
+    background: #00002e;
     color: #fff;
     transition: all 0.3s;
     height: 100vh;
@@ -75,12 +75,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #1a1a1a;
+    background: #00002e;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid #00002e;
 }
 
 #sidebar ul p {
@@ -95,14 +95,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #1a1a1a;
+    color: #00002e;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #1a1a1a;
+    background: #00002e;
 }
 
 a[data-toggle="collapse"] {
@@ -120,7 +120,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #1a1a1a;
+    background: #00002e;
 }
 
 ul.CTAs {
@@ -142,7 +142,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #1a1a1a !important;
+    background: #00002e !important;
     color: #fff !important;
 }
 
@@ -213,9 +213,9 @@ main{
 .portray_show{
     display: block;
 }
-main img{
+.box img{
     width: 25vw;
-    border: #282828 solid 4px;
+    border: #131A43 solid 4px;
 }
 main h2{
     color: rgb(255, 255, 255);
@@ -240,7 +240,11 @@ main h2{
     display: flex;
 }
 #me{
+    display: flex;
     color: white;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    height: 95vh;
 }
 #reseaux{
     display: flex;
@@ -249,4 +253,21 @@ main h2{
 }
 .prez{
     display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    color: white;
+}
+.photo-prez img{
+    width: 30vw;
+}
+.photo-prez{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fleche{
+    width: 20px;
+    height: 20px;
+    margin-left: 101vw;
 }
